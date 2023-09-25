@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefônica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"> <!--link do arquivo css-->
+</head>
+<body>
+    <div class="container"> <!--criação conteiner / bloco-->
+        <header>
+            <img src="..\imagem\agenda_tel.png" alt="agenda tel"/> <!--imagem do cabeçalho-->
+            <h1>Agenda Telefônica</h1>
+        </header>
+            <form id="form-contato"> <!--Criação formulario-->
+                <input type="text" id="nome-contato" required placeholder="Nome do Contato"/> <!--required = item obrigatorio-->
+                <input type="text" id="num-tel" required placeholder="Nº telefone"/>
+                <button type="submit">Adicionar +</button> <!--criação botão-->
+            </form>
+            <table cellspacing="0"> <!--Criação tabela, cellspacing é a retirada do espaço na borda da tabela que divide as colunas-->
+                <thead><!--Criação cabeçalho da tabela-->
+                    <tr> <!--adicionar linha da tabela-->
+                        <th>Nome do Contato</th> <!-- th=Criação colunas que ficarão no topo da tabela-->
+                        <th>Nº do tel</th>
+                    </tr>
+                </thead>
+                <tbody> <!--Criação conteudo da tabela-->
+                </tbody>
+                <tfoot> <!--Criação rodapé da tabela-->
+                    <tr>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                </tfoot>
+            </table>
+    </div>
+    <script src="./main.js"></script> <!--link do js-->
+</body>
+</html>
